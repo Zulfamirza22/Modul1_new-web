@@ -1,0 +1,123 @@
+/* Mengatur margin, padding, dan ukuran kotak untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur gaya dasar untuk elemen body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mengatur gaya container utama aplikasi */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Mengatur gaya judul (h1) */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mengatur tata letak input dan tombol */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Mengatur gaya input teks untuk menambahkan tugas */
+#task-input {
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Mengatur gaya tombol tambah */
+#add-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Mengubah warna tombol saat hover */
+#add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Menghapus tanda titik pada daftar */
+ul {
+    list-style: none;
+}
+
+/* Mengatur gaya item tugas dalam daftar */
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+/* Mengatur gaya input teks dalam item tugas */
+li input {
+    width: 80%;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Menghapus garis luar pada input teks saat fokus */
+li input:focus {
+    outline: none;
+}
+
+/* Mengatur gaya tombol edit dan hapus */
+button.edit, button.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Mengatur warna tombol edit */
+button.edit {
+    background-color: #ffc107;
+}
+
+/* Mengatur warna tombol hapus */
+button.delete {
+    background-color: #dc3545;
+}
+
+/* Mengubah warna tombol edit saat hover */
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+/* Mengubah warna tombol hapus saat hover */
+button.delete:hover {
+    background-color: #c82333;
+}
